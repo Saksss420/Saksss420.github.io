@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK Store - Fashion at Your Doorstep</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+ <!-- nav start -->
+ <div class="container-fluid">
+    <nav>
+        <a href=""><img src="logo.webp" alt="" height="60px"></a>
+        <div class="left">
+            <a href="">Home</a>
+            <a href="">Contact us</a>
+            <a href="">About us</a>
+        </div>
+        <div class="search">
+            <label for="searchText">Search</label>
+            <input type="text" id="searchText" name="search" placeholder="Search for dresses...">
+        </div>
+        
+        <div class="right">
+            <a href="cart.html"><i class="bi bi-minecart"></i> Cart (<span id="cart-count">0</span>)</a>
+        </div>
+    </nav>
+</div>
+<!-- nav ended -->
+
+
+    </header>
+
+    <main>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://m.media-amazon.com/images/I/71HALVo7TeL._AC_UL1500_.jpg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h1 class="product-name">Elegant Red Dress</h1>
+                        <p class="product-description">A beautiful and elegant red dress perfect for formal occasions.</p>
+                        <p class="price">Price: $59.99</p>
+                        <label for="quantity">Quantity:</label>
+                        <select class="quantity-selector">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0179/4667/3252/files/Untitled_design_-_2024-07-26T225937.026_480x480.jpg?v=1722024410" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h1 class="product-name">Le Gary Fashion</h1>
+                        <p class="product-description">Le Gary Fashion embodies timeless elegance with a modern twist.</p>
+                        <p class="price">Price: $89.99</p>
+                        <label for="quantity">Quantity:</label>
+                        <select class="quantity-selector">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://cdn.shopify.com/s/files/1/0748/3473/files/classic-dress.png?v=1681903685" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h1 class="product-name">Son de Flor</h1>
+                        <p class="product-description">Son de Flo is a celebration of effortless style and vibrant energy.</p>
+                        <p class="price">Price: $79.99</p>
+                        <label for="quantity">Quantity:</label>
+                        <select class="quantity-selector">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://dukaan.b-cdn.net/700x700/webp/4861330/8e6eff53-cc56-43a0-a939-4b0d9790200a/1631377043145-7a8ac7b9-bf89-4fae-99a4-f41048238d2c.jpeg" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h1 class="product-name">Trendy Modern Women Dress</h1>
+                        <p class="product-description">Le Gary Fashion embodies timeless elegance with a modern twist.</p>
+                        <p class="price">Price: $79.99</p>
+                        <label for="quantity">Quantity:</label>
+                        <select class="quantity-selector">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="col">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.meesho.com/images/products/425170298/sdrwu_512.webp" alt="Product Image">
+                    </div>
+                    <div class="product-details">
+                        <h1 class="product-name">Design Your Fashion Shirt</h1>
+                        <p class="product-description">Fashionable and trendy shirts for everyday wear.</p>
+                        <p class="price">Price: $59.99</p>
+                        <label for="quantity">Quantity:</label>
+                        <select class="quantity-selector">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                        <button class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-item">
+            <a href="">Dresses</a>
+        </div>
+        <div class="category-item">
+            <a href="">Accessories</a>
+        </div>
+        <div class="category-item">
+            <a href="">Shoes</a>
+        </div>
+        <div class="category-item">
+            <a href="">Sale</a>
+        </div>
+    </section>
+
+    <script src="product.js"></script>
+</body>
+</html>

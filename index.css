@@ -1,0 +1,274 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f7ff;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3d9bff;
+    padding: 15px 30px;
+    width: 100%;
+}
+
+nav img {
+    height: 60px;
+    transition: opacity 0.3s ease;
+}
+
+nav img:hover {
+    opacity: 0.8;
+}
+
+nav .left a,
+nav .right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav .left a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+nav .left a:hover {
+    background-color: #006699;
+}
+
+nav .left a:hover,
+nav .right a:hover {
+    text-decoration: underline;
+}
+
+nav .left {
+    display: flex;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.search label {
+    margin-right: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.search input[type="text"] {
+    width: 250px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.search input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+nav .right {
+    display: flex;
+}
+
+nav .right a {
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav .right a:hover {
+    background-color: #006699;
+}
+
+.main-content {
+    padding: 50px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.hero {
+    background-color: #0099cc;
+    padding: 40px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.shop-now {
+    padding: 12px 25px;
+    font-size: 1.2em;
+    background-color: #005c99;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.shop-now:hover {
+    background-color: #004d73;
+    transform: scale(1.05);
+}
+.featured-products h2 {
+    font-size: 2em;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.product-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+.product-name {
+    font-size: 1.3em;
+    margin-top: 15px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.1em;
+    margin: 10px 0;
+    color: #007bff;
+}
+
+.product-btn {
+    padding: 8px 15px;
+    background-color: #0099cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-btn:hover {
+    background-color: #007bff;
+}
+.categories {
+    margin-top: 50px;
+}
+
+.categories h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.category-item {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+.category-item a {
+    font-size: 1.5em;
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category-item a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+.sign-in-prompt {
+    margin-top: 30px;
+}
+
+.sign-in-prompt a {
+    color: #0099cc;
+    text-decoration: none;
+}
+
+.sign-in-prompt a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .hero-text p {
+        font-size: 1.1em;
+    }
+
+    .product-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .categories h2 {
+        font-size: 1.8em;
+    }
+
+    .category-item a {
+        font-size: 1.3em;
+    }
+
+    .shop-now {
+        font-size: 1em;
+        padding: 10px 20px;
+    }
+}

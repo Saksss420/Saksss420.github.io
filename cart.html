@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart-SK Store</title>
+    <link rel="shortcut icon" href="logo.webp" type="image/x-icon">
+    <link rel="stylesheet" href="cart.css">
+</head>
+<body>
+
+<!-- nav start -->
+        <div class="container-fluid">
+            <nav>
+                <div class="left">
+                    <a href=""><img src="logo.webp" alt="" height="60px"></a>
+                    <a href="">Home</a>
+                    <a href="">Contact us</a>
+                    <a href="">About us</a>
+                </div>
+                <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+            </nav>
+        </div>
+<!-- nav end -->
+
+    <main>
+        <h1>Your Cart</h1>
+        
+        <table id="cart-table">
+            <thead>
+                <tr>
+                    <th>Image</th>
+                    <th>Product Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items"></tbody>
+        </table>
+
+        <div class="cart-summary">
+            <p>Total Price: $<span id="total-price">0.00</span></p>
+            <div class="cart-buttons">
+                <button class="checkout-btn">Proceed to Checkout</button>
+                <button class="continue-shopping-btn" onclick="continueShopping()">Continue Shopping</button>
+                <button class="clear-all-btn" onclick="clearCart()">Clear All</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="cart.js"></script>
+
+</body>
+</html>
