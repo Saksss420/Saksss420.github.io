@@ -82,13 +82,6 @@ Use the search bar to browse products, add items to the cart, and proceed with *
 
 ---
 
-## **📸 Screenshots**
-*(Optional: Add images of the website.)*  
-
-![Homepage Screenshot](https://via.placeholder.com/800x400.png)  
-*(Homepage of SK Store)*  
-
----
 
 ## **🛠 Technologies Used**
 - **Frontend:** React.js, Tailwind CSS  
@@ -116,8 +109,8 @@ See the [LICENSE](LICENSE) file for more details.
 
 ## **📬 Contact**
 For queries, reach out to:  
-📧 **Email:** your.email@example.com  
-🔗 **GitHub:** [yourusername](https://github.com/yourusername)  
+📧 **Email:** sakshyankhadka982@gmail.com  
+🔗 **GitHub:** [Saksss420]([https://github.com/yourusername](https://github.com/Saksss420))  
 🔗 **Website:** *Coming Soon!*  
 
 ---
